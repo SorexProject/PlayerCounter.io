@@ -55,10 +55,9 @@ import PlayerCounter from '@/components/dashboard/PlayerCounter';
 <PlayerCounter uuid={server.uuid}></PlayerCounter>
 ```
 ## Finalization
-After all code inserted to code and app and resources and database and vendor folder pasted. Please run this commands (node is required, min version: v13.x [node -v]):
+After all code inserted to code and app and resources and database and vendor folder pasted. Please run this commands (node is required, min version: v16.x [node -v]):
 - npm i -g yarn
 - cd /var/www/pterodactyl
-- yarn install
-- yarn run build:production
-- php artisan route:clear && php artisan cache:clear && php artisan view:clear
+- yarn
 - php artisan migrate
+- php artisan route:clear && php artisan cache:clear && php artisan view:clear && yarn run build:production
