@@ -55,7 +55,8 @@ import PlayerCounter from '@/components/dashboard/PlayerCounter';
 <PlayerCounter uuid={server.uuid}></PlayerCounter>
 ```
 ## Finalization
-After all code inserted to code and app and resources and database and vendor folder pasted. Please run this commands (node is required, min version: v16.x [node -v]):
+After all code inserted to code and app and resources and database folder pasted. Please run this commands (node is required, min version: v16.x [node -v]):
+- composer require austinb/gameq:~3.0
 - npm i -g yarn
 - cd /var/www/pterodactyl
 - yarn
